@@ -25,17 +25,17 @@ st.help(range)
 st.header("Widgets:")
 st.subheader("Checkbox")
 
-if st.checkbox("Show/Hide"):
-    st.text("Mostrar u ocultar Widget")
-    st.subheader("Radio buttons")
+    if st.checkbox("Show/Hide"):
+        st.text("Mostrar u ocultar Widget")
+        st.subheader("Radio buttons")
 
 status = st.radio("Cual es su estatus", ("Activo", "Inactivo"))
 
-if status == "Activo":
-    st.success("Estás activo")
-else: 
-    st.warning("Inactivo")
-    st.subheader("SelectBox")
+    if status == "Activo":
+        st.success("Estás activo")
+    else: 
+        st.warning("Inactivo")
+        st.subheader("SelectBox")
 
 occupation = st.selectbox(
     "Tu ocupación", ["Programador", "Científico de datos", "BI", "Ingeniero de Datos"]
