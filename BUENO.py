@@ -24,13 +24,10 @@ st.header("Obtener información de ayuda de Python")
 st.help(range)
 st.header("Widgets:")
 st.subheader("Checkbox")
-
     if st.checkbox("Show/Hide"):
         st.text("Mostrar u ocultar Widget")
         st.subheader("Radio buttons")
-
 status = st.radio("Cual es su estatus", ("Activo", "Inactivo"))
-
     if status == "Activo":
         st.success("Estás activo")
     else: 
