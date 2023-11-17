@@ -33,11 +33,9 @@ if status == "Activo":
 else: 
     st.warning("Inactivo")
     st.subheader("SelectBox")
-
 occupation = st.selectbox(
     "Tu ocupación", ["Programador", "Científico de datos", "BI", "Ingeniero de Datos"]
 )
-
 st.write("Opción seleccionada:", occupation)
 st.subheader("MultiSelect")
 
@@ -45,7 +43,6 @@ location = st.multiselect(
     "Donde trabajas?",
     ("México", "New York", "Guadalajara", "Monterrey", "Nepal", "Buenos Aires", "Caracas"),
 )
-
 st.write("Seleccionó:", len(location), "locaciones")
 st.subheader("Slider")
 level = st.slider("Cual es tu nivel?", 1, 5)
